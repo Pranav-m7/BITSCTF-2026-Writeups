@@ -10,7 +10,7 @@ The challenge provides a clue about a "major event" in Copenhagen in early 2024,
 ### Step 1: Identifying the Event
 The first step to solving this is pinpointing the "travesty" in Copenhagen in early 2024. A quick search reveals this refers to the devastating fire that destroyed the historic **Børsen (Old Stock Exchange)** building on **April 16, 2024**.
 
-![Screenshot 5](./Screenshot%202026-02-22%20162035.png)
+![Screenshot 5](images/euclidean-construct/Screenshot%202026-02-22%20162035.png)
 *Image: The Børsen fire incident*
 
 ---
