@@ -20,12 +20,14 @@ The prompt mentions "pyramids resting on 4 balls" overlooking an "unguarded sect
 
 By dropping into Google Maps Street View and setting the timeline to post-April 2024, we can scan the canal side of the street. Sure enough, right in front of a gap in the stone parapet (the unguarded boat stairs), sits the exact concrete pyramid barrier described in the challenge.
 
-![Screenshot 1](./Screenshot%202026-02-21%20064832.png)
+![Screenshot 1](images/euclidean-construct/Screenshot%202026-02-21%20064832.png)
 
 
-![Screenshot 2](./Screenshot%202026-02-21%20064847.png)
+![Screenshot 2](images/euclidean-construct/Screenshot%202026-02-21%20064847.png)
 
-![Screenshot 3](./Screenshot%202026-02-21%20064919.png)
+
+
+![Screenshot 3](images/euclidean-construct/Screenshot%202026-02-21%20064919.png)
 
 
 ---
@@ -35,7 +37,8 @@ The specific three-part flag format (`///xxx.xxx.xxx`) is the universal signatur
 
 By taking the exact location of that specific pyramid barrier by the water and plugging it into the What3Words grid, we get our three words: **tickles.cheeks.bend**.
 
-![Screenshot 4](./Screenshot%202026-02-21%20065542.png)
+
+![Screenshot 4](images/euclidean-construct/Screenshot%202026-02-21%20065542.png)
 
 
 ---
