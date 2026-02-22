@@ -129,4 +129,4 @@ bitsctf{qr_bu7_n07_7h47_qr}
 
 ---
 
-*Writeup by [Your Name]*
+*Writeup by Pranavvv*
