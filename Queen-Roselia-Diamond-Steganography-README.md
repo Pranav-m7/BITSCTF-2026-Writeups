@@ -20,8 +20,8 @@ exiftool challenge_stego.tif
 ```bash
 strings challenge_stego.tif
 ```
-
-![Strings Output](images/queen-roselia-diamond/strings-output.png)
+![Screenshot 2026-02-21 042450](./images/queen-roselia-diamond/Screenshot%202026-02-21%20042450.png)
+![Screenshot 2026-02-21 042549](./images/queen-roselia-diamond/Screenshot%202026-02-21%20042549.png)
 *Image 2: strings command output showing garbage data*
 
 ---
