@@ -21,7 +21,7 @@ This revealed a base64 string which decodes to the Malbolge interpreter link: ht
 
 ![Strings Output]()
 (![Alt text description here](images/marlbolo/Screenshot%202026-02-21%20044425.png))
-*Image 1: Output of strings command*
+
 (![description](images/marlbolo/Screenshot%202026-02-21%20044505.png))
 ---
 
