@@ -98,4 +98,4 @@ BITSCTF{d4mn_y0ur_r34lly_w3n7_7h47_d33p}
 
 ---
 
-*Writeup by [Your Name]*
+*Writeup by Pranvvv*
