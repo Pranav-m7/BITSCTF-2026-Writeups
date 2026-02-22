@@ -19,7 +19,7 @@ strings -n 10 Marlboro.jpg
 
 This revealed a base64 string which decodes to the Malbolge interpreter link: https://zb3.me/malbolge-tools/
 
-![Strings Output - Placeholder]()
+![Strings Output](images/marlbolo/strings-output.png)
 *Image 1: Output of strings command*
 
 ---
@@ -31,12 +31,12 @@ Used `binwalk` to carve out nested files hidden within the original image.
 binwalk --dd='.*' Marlboro.jpg
 ```
 
-![Binwalk Execution - Placeholder]()
+![Binwalk Execution](images/marlbolo/binwalk-execution.png)
 *Image 2: binwalk command execution*
 
 After extracting the nested archives, we recovered the core challenge files.
 
-![Extracted Files - Placeholder]()
+![Extracted Files](images/marlbolo/extracted-files.png)
 *Image 3: Extracted zip file folder containing encrypted.bin and smoke.png*
 
 ---
@@ -50,7 +50,7 @@ zsteg smoke.png
 
 **Extracted XOR Key:** `c7027f5fdeb20dc7308ad4a6999a8a3e069cb5c8111d56904641cd344593b657`
 
-![Zsteg Output - Placeholder]()
+![Zsteg Output](images/marlbolo/zsteg-output.png)
 *Image 4: zsteg smoke.png output showing the XOR key*
 
 ---
@@ -58,7 +58,7 @@ zsteg smoke.png
 ### Step 4: Cryptographic Decryption
 Loaded `encrypted.bin` into CyberChef. Applied the XOR recipe using the hex key recovered in Step 3. The output revealed obfuscated source code written in **Malbolge** (the "programming language from hell").
 
-![CyberChef XOR - Placeholder]()
+![CyberChef XOR](images/marlbolo/cyberchef-xor.png)
 *Image 5: CyberChef interface with XOR recipe, showing the decrypted Malbolge code*
 
 ---
@@ -66,12 +66,12 @@ Loaded `encrypted.bin` into CyberChef. Applied the XOR recipe using the hex key 
 ### Step 5: Esoteric Code Execution
 Taking the decrypted Malbolge payload from CyberChef, we navigated to the interpreter link recovered in Step 1.
 
-![Malbolge Interpreter - Placeholder]()
+![Malbolge Interpreter](images/marlbolo/malbolge-interpreter.png)
 *Image 6: zb3.me Malbolge interpreter link with the decrypted code pasted*
 
 Executing the code within the interpreter successfully compiled and ran the payload, outputting the plaintext flag.
 
-![Flag Output - Placeholder]()
+![Flag Output](images/marlbolo/flag-output.png)
 *Image 7: Output of the Malbolge tool displaying the final flag*
 
 ---

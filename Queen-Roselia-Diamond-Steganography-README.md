@@ -21,7 +21,7 @@ exiftool challenge_stego.tif
 strings challenge_stego.tif
 ```
 
-![Strings Output - Placeholder]()
+![Strings Output](images/queen-roselia-diamond/strings-output.png)
 *Image 2: strings command output showing garbage data*
 
 ---
@@ -57,10 +57,10 @@ for i in range(8):
 python3 sl8.py
 ```
 
-![Python Script Output - Placeholder]()
+![Python Script Output](images/queen-roselia-diamond/python-output.png)
 *Image 3: Python script terminal output*
 
-![Extracted Layers - Placeholder]()
+![Extracted Layers](images/queen-roselia-diamond/extracted-layers.png)
 *Image 4: Extracted layer folder screenshot*
 
 ---
@@ -68,12 +68,12 @@ python3 sl8.py
 ### Step 3: The Decoy
 Looking through the extracted layers, one of them contained a QR code. I enhanced it to make it scannable.
 
-![Enhanced QR Code - Placeholder]()
+![Enhanced QR Code](images/queen-roselia-diamond/qr-code.png)
 *Image 5: Enhanced QR code image*
 
 Scanning this QR code resulted in a **fake flag** - a clever decoy!
 
-![Fake Flag - Placeholder]()
+![Fake Flag](images/queen-roselia-diamond/fake-flag.png)
 *Image 1: Fake flag from QR scan*
 
 ---
@@ -81,16 +81,16 @@ Scanning this QR code resulted in a **fake flag** - a clever decoy!
 ### Step 4: Finding the Real Flag
 The real flag was hidden in the visual noise of **layer 7**. I opened `layer_7_enhanced.png` in GIMP and adjusted the **Color Threshold** to isolate the bright white text fragments from the gray QR code background.
 
-![GIMP Threshold 1 - Placeholder]()
+![GIMP Threshold 1](images/queen-roselia-diamond/gimp-threshold-1.png)
 *Image 6.1: GIMP screenshot - Color Threshold adjustment*
 
-![GIMP Threshold 2 - Placeholder]()
+![GIMP Threshold 2](images/queen-roselia-diamond/gimp-threshold-2.png)
 *Image 6.2: GIMP screenshot - Revealing flag part*
 
-![GIMP Threshold 3 - Placeholder]()
+![GIMP Threshold 3](images/queen-roselia-diamond/gimp-threshold-3.png)
 *Image 6.3: GIMP screenshot - Revealing flag part*
 
-![GIMP Threshold 4 - Placeholder]()
+![GIMP Threshold 4](images/queen-roselia-diamond/gimp-threshold-4.png)
 *Image 6.4: GIMP screenshot - Revealing flag part*
 
 ---
@@ -98,7 +98,7 @@ The real flag was hidden in the visual noise of **layer 7**. I opened `layer_7_e
 ### Step 5: Reconstructing the Flag
 The text was fragmented and sheared. I pieced the visible parts together and had to guess the missing `bu7` part based on the leetspeak context (`qr_bu7_n07_7h47_qr`).
 
-![Flag Reconstruction - Placeholder]()
+![Flag Reconstruction](images/queen-roselia-diamond/flag-reconstruction.png)
 *Image 7: Final flag constructed in text editor*
 
 ---
