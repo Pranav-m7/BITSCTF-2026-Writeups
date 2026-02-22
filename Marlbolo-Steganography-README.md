@@ -22,7 +22,7 @@ This revealed a base64 string which decodes to the Malbolge interpreter link: ht
 ![Strings Output]()
 (![Alt text description here](images/marlbolo/Screenshot%202026-02-21%20044425.png))
 *Image 1: Output of strings command*
-()
+(![description](images/marlbolo/Screenshot%202026-02-21%20044505.png))
 ---
 
 ### Step 2: Payload Extraction
@@ -32,14 +32,14 @@ Used `binwalk` to carve out nested files hidden within the original image.
 binwalk --dd='.*' Marlboro.jpg
 ```
 
-![Binwalk Execution](images/marlbolo/binwalk-execution.png)
+(![description](images/marlbolo/Screenshot%202026-02-21%20044602.png))
 *Image 2: binwalk command execution*
 
 After extracting the nested archives, we recovered the core challenge files.
 
-![Extracted Files](images/marlbolo/extracted-files.png)
+(![description](images/marlbolo/Screenshot%202026-02-21%20044633.png))
 *Image 3: Extracted zip file folder containing encrypted.bin and smoke.png*
-
+(![description](images/marlbolo/Screenshot%202026-02-21%20044651.png))
 ---
 
 ### Step 3: Steganographic Key Recovery
@@ -51,7 +51,7 @@ zsteg smoke.png
 
 **Extracted XOR Key:** `c7027f5fdeb20dc7308ad4a6999a8a3e069cb5c8111d56904641cd344593b657`
 
-![Zsteg Output](images/marlbolo/zsteg-output.png)
+(![description](images/marlbolo/Screenshot%202026-02-21%20044724.png))
 *Image 4: zsteg smoke.png output showing the XOR key*
 
 ---
@@ -59,20 +59,19 @@ zsteg smoke.png
 ### Step 4: Cryptographic Decryption
 Loaded `encrypted.bin` into CyberChef. Applied the XOR recipe using the hex key recovered in Step 3. The output revealed obfuscated source code written in **Malbolge** (the "programming language from hell").
 
-![CyberChef XOR](images/marlbolo/cyberchef-xor.png)
-*Image 5: CyberChef interface with XOR recipe, showing the decrypted Malbolge code*
+the output of cyberchef from puting encrypted.bin as input file and using xo with the key we just got give malbolge code.
 
 ---
 
 ### Step 5: Esoteric Code Execution
 Taking the decrypted Malbolge payload from CyberChef, we navigated to the interpreter link recovered in Step 1.
 
-![Malbolge Interpreter](images/marlbolo/malbolge-interpreter.png)
+(![description](images/marlbolo/Screenshot%202026-02-21%20045025.png))
 *Image 6: zb3.me Malbolge interpreter link with the decrypted code pasted*
 
 Executing the code within the interpreter successfully compiled and ran the payload, outputting the plaintext flag.
 
-![Flag Output](images/marlbolo/flag-output.png)
+(![description](images/marlbolo/Screenshot%202026-02-21%20045025.png))
 *Image 7: Output of the Malbolge tool displaying the final flag*
 
 ---
