@@ -62,4 +62,4 @@ Medium
 
 ---
 
-*Writeup by [Your Name]*
+*Writeup by Pranvvv*
