@@ -10,7 +10,7 @@ The challenge provides a clue about a "major event" in Copenhagen in early 2024,
 ### Step 1: Identifying the Event
 The first step to solving this is pinpointing the "travesty" in Copenhagen in early 2024. A quick search reveals this refers to the devastating fire that destroyed the historic **Børsen (Old Stock Exchange)** building on **April 16, 2024**.
 
-![Event Image](images/euclidean-construct/event.png)
+![Screenshot 5](./Screenshot%202026-02-22%20162035.png)
 *Image: The Børsen fire incident*
 
 ---
@@ -20,8 +20,13 @@ The prompt mentions "pyramids resting on 4 balls" overlooking an "unguarded sect
 
 By dropping into Google Maps Street View and setting the timeline to post-April 2024, we can scan the canal side of the street. Sure enough, right in front of a gap in the stone parapet (the unguarded boat stairs), sits the exact concrete pyramid barrier described in the challenge.
 
-![Google Maps Street View](images/euclidean-construct/street-view.png)
-*Image: Street View showing the concrete pyramid barriers*
+![Screenshot 1](./Screenshot%202026-02-21%20064832.png)
+
+
+![Screenshot 2](./Screenshot%202026-02-21%20064847.png)
+
+![Screenshot 3](./Screenshot%202026-02-21%20064919.png)
+
 
 ---
 
@@ -30,8 +35,8 @@ The specific three-part flag format (`///xxx.xxx.xxx`) is the universal signatur
 
 By taking the exact location of that specific pyramid barrier by the water and plugging it into the What3Words grid, we get our three words: **tickles.cheeks.bend**.
 
-![What3Words Location](images/euclidean-construct/what3words.png)
-*Image: What3Words interface showing the location*
+![Screenshot 4](./Screenshot%202026-02-21%20065542.png)
+
 
 ---
 
