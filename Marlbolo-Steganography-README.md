@@ -19,10 +19,10 @@ strings -n 10 Marlboro.jpg
 
 This revealed a base64 string which decodes to the Malbolge interpreter link: https://zb3.me/malbolge-tools/
 
-![Strings Output](images/marlbolo/Screenshot 2026-02-21 044425.png)
-()
+![Strings Output]()
+(![Alt text description here](images/marlbolo/Screenshot%202026-02-21%20044425.png))
 *Image 1: Output of strings command*
-(https://github.com/Pranav-m7/BITSCTF-2026-Writeups/blob/362c4e292154e24f988e510e09c7777bff8c68e9/images/marlbolo/Screenshot%202026-02-21%20044505.png)
+()
 ---
 
 ### Step 2: Payload Extraction
